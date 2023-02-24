@@ -50,10 +50,6 @@ describe('기존 순회 방식', () => {
   });
 });
 
-// 이터러블: 이터레이터를 리턴하는 [Symbol.iterator]()를 가지는 값
-// 이터레이터: {value, done} 객체를 리턴하는 next()를 가진 값
-// 이터러블/이터레이터 프로토콜: 이터레이터를 이용해 for of, 전개 연산자 등과 함께 동작하게 하는 규약(규약 보다는 API 형식 인터페이스? 느낌)
-
 describe('커스텀 이터러블 만들기', () => {
   const myIterable = {
     [Symbol.iterator]() {
